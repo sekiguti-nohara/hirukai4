@@ -1,0 +1,8 @@
+ここは休憩シフト編集ページです
+
+<% @rests.each do |rest| %>
+	<%= form_for rest,url: rest_update_path do |f| %>
+		<%= f.number_field :rest_start%>
+		<%= f.submit %>
+	<% end %>
+<% end %>
